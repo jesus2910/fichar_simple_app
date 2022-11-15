@@ -1,0 +1,38 @@
+
+
+.gradient-custom {
+/* fallback for old browsers */
+background: #000000;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to top, rgb(0, 0, 0), rgb(73, 73, 73));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to top, rgb(0, 0, 0), rgb(73, 73, 73))
+}
+
+select.form-select,
+#hora_entrada,
+#hora_salida {
+    background-color: rgb(73, 73, 73);
+    color: #ffcb1a;
+    font-weight: bold;
+    text-align: center;
+    border-color: #ffcb1a;
+}
+
+select.form-select:focus,
+#hora_entrada:focus,
+#hora_salida:focus{
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgb(255, 255, 255);
+    border-color: #ffcb1a;
+}
+
+select option:hover{
+    background-color: rgb(73, 73, 73);
+    color: #ffcb1a;
+    font-weight: bold;
+    text-align: center;
+}
+
+
