@@ -7,7 +7,7 @@ $datos= mysqli_query($conex, $query_trabajadores)
 ?>
 
 <div class="custom_select mb-5">
-	<select name="select" class="form-select" required">
+	<select name="select" class="form-select">
 <?php
 
     while($mostrar=mysqli_fetch_array($datos)){
