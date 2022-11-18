@@ -22,18 +22,18 @@ if (isset($_POST['enviar'])) {
 
         if ($query_horas) {
 
-            echo("<div class='alert alert-success' role='alert'><h4> ✔️¡Has fichado correctamente!<h4></div>");
+            echo("<div class='alert alert-success' role='alert'><p> ✔️¡Has fichado correctamente!<p></div>");
 
         }else{
 
         
-            echo("<div class='alert alert-danger' role='alert'><h4> ❌¡ERROR BDD!</h4></div>".mysqli_error($conex));
+            echo("<div class='alert alert-danger' role='alert'><p> ❌¡ERROR BDD!</p></div>".mysqli_error($conex));
             
         }
 
     }else{
 
-        echo("<div class='alert alert-danger' role='alert'><h4> ❌¡Por favor rellena todos los campos!</h4></div>");
+        echo("<div class='alert alert-danger' role='alert'><p> ❌¡Por favor rellena todos los campos!</p></div>");
     }
 
 }

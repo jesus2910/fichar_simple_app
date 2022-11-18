@@ -10,3 +10,9 @@
   <title>Fichaje</title>
 </head>
 <body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a href="index.php" class="navbar-brand"><img src="img/1200.png" class="img-fluid" style="height: 50px;" alt="imagen-negocio"></a>
+  </div>
+</nav>
