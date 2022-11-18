@@ -11,6 +11,7 @@ background: -webkit-linear-gradient(to top, rgb(0, 0, 0), rgb(73, 73, 73));
 background: linear-gradient(to top, rgb(0, 0, 0), rgb(73, 73, 73))
 }
 
+
 select.form-select,
 #hora_entrada,
 #hora_salida {
