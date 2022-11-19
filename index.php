@@ -17,11 +17,11 @@
                   <div class="d-grid gap-2 col-12 mx-auto">
                   <?php include("functions/trabajadores.php")?>
                     
-                    <button type="button" class="btn btn-outline-warning btn-md px-4 mb-2" onclick="mostrarHoraEntrada()" >Pulsa aqui para añadir entrada UTC</button>
-                    <input type="time" class="form-control mb-5" id ="hora_entrada" name="hora_entrada" required readonly>
+                    <button type="button" class="btn btn-outline-warning btn-md px-4 mb-2" id= boton_entrada onclick="mostrarHoraEntrada()" >Pulsa aqui para añadir entrada UTC</button>
+                    <input type="time" class="form-control mb-5" id ="hora_entrada" name="hora_entrada" readonly>
 
-                    <button type="button" class="btn btn-outline-warning btn-md px-4 mb-2" onclick="mostrarHoraSalida()" >Pulsa aqui para añadir salida UTC</button>      
-                    <input type="time" class="form-control mb-5" id ="hora_salida" name="hora_salida" required readonly>
+                    <button type="button" class="btn btn-outline-warning btn-md px-4 mb-2" id= boton_salida onclick="mostrarHoraSalida()" >Pulsa aqui para añadir salida UTC</button>      
+                    <input type="time" class="form-control mb-5" id ="hora_salida" name="hora_salida" readonly>
                    
                   
                   <input type="submit" class="btn btn-outline-warning btn-lg px-5 mb-5" name="enviar" value="Aceptar"/>

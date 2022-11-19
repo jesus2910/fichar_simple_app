@@ -6,6 +6,8 @@ include("con_db.php");
 
 if (isset($_POST['enviar'])) {
     
+    header("location:index.php");
+    return;
    
 
     if (!empty($_POST['hora_entrada']) && !empty($_POST['hora_salida']) ) {
@@ -17,23 +19,28 @@ if (isset($_POST['enviar'])) {
         
         $query_fichar = "INSERT INTO horarios(cod_trabajador,entrada,salida,fecha) VALUES ('$cod_trabajador','$entrada','$salida','$fecha')";
         $query_horas= mysqli_query($conex, $query_fichar);
-    
+
         #echo($query_fichar);
 
         if ($query_horas) {
 
-            echo("<div class='alert alert-success' role='alert'><p> ✔️¡Has fichado correctamente!<p></div>");
+            ?> 
+                <div class='alert alert-success alert-dismissible fade show' role='alert'><p>✔️¡Has fichado correctamente!<p></div>
+            <?php
+            
 
         }else{
 
-        
-            echo("<div class='alert alert-danger' role='alert'><p> ❌¡ERROR BDD!</p></div>".mysqli_error($conex));
+            echo("<div class='alert alert-danger alert-dismissible fade show' role='alert'><p>❌¡ERROR BDD!</p></div>".mysqli_error($conex));
             
         }
 
     }else{
 
-        echo("<div class='alert alert-danger' role='alert'><p> ❌¡Por favor rellena todos los campos!</p></div>");
+        ?>
+        <div class='alert alert-danger alert-dismissible fade show' role='alert'><p>❌¡Rellena todos los campos, porfavor!<p></div>
+        <?php
+        
     }
 
 }

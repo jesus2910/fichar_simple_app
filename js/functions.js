@@ -4,6 +4,8 @@ function mostrarHoraEntrada(){
     let hora = fecha.toISOString().substring(11,16)
     //alert(hora)
     document.getElementById("hora_entrada").value = hora
+    
+
 }
 
 function mostrarHoraSalida(){
