@@ -11,8 +11,12 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar sticky-top center">
   <div class="container">
     <a href="index.php" class="navbar-brand"><img src="img/1200.png" class="img-fluid" style="height: 50px;" alt="imagen-negocio"></a>
+    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+    <a class="nav-link" href="#">Características</a>
+    <a class="nav-link" href="#">Precios</a>
+    <a class="nav-link disabled">Deshabilitado</a>
   </div>
 </nav>
