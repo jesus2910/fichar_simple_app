@@ -31,8 +31,12 @@ select option:hover{
 
 
 .navbar{
-    color: #ffcb1a;
     background-color: rgba(39, 39, 39, 0.5);
     font-weight: bold;
     padding-top: 50px;
 }
+
+a.nav-link{
+    color: #ffffff;
+}
+
